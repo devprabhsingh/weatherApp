@@ -52,7 +52,7 @@ header{
     width:250px;
     overflow:auto;
     display:none;
-
+    z-index:2;
 }
 #cities-list button{
     display:block;
