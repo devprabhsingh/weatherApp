@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:verdana;
+}
+body{
+    background: #8E2DE2;
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); 
+}
+#main-container{
+    position:relative;
+    background:white;
+    border-radius:30px;
+    margin:20px;
+    padding:25px;
+}
+header{
+    display:flex;
+    justify-content:space-around;
+    height:10vh;
+    align-items:center;
+}
+#title{
+    font-family:cursive;
+    font-size:25px;
+    color:blue;
+    background:white;
+    border-radius:15px;
+    padding:5px;
+    letter-spacing: 1px;
+}
+.search-form{
+    display:flex;
+    align-items:center;
+    position:relative;
+}
+
+#search-city{
+    outline:none;
+    border:none;
+    padding:2px;
+    height:5vh;
+    border-radius:15px;
+    width:250px;
+}
+
+#cities-list{
+    position:absolute;
+    top:5vh;
+    height:200px;
+    width:250px;
+    overflow:auto;
+    display:none;
+
+}
+#cities-list button{
+    display:block;
+    padding:10px;
+    width:100%;
+    cursor:pointer;
+    border:none;
+}
+.fa-arrow-alt-circle-right{
+    font-size:40px;
+    border-radius:50%;
+    color:white;
+    cursor:pointer;
+}
+
+#inner-container{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+#box2{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+#temp-value{
+    
+    font-family:helvetica;
+    font-size:30px;
+    color:purple;
+}
+.other-info{
+    font-size:20px;
+    color:rgb(117, 115, 115);
+
+}
+#observation-time{
+    color:purple;
+    font-size:17px;
+}
+#source-logo{
+    color:purple;
+    font-size:17px;
+    text-align:right;
+}
+#source-logo img{
+    height:20px;
+    width:150px;
+}
+#time-source{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.val-color{
+    color:blue;
+    font-family:"Comic Sans MS";
+}
+.s{
+    font-size:100px;
+}
+#weather-text{
+    font-size:25px;
+    padding-right:15px;
+    font-family:cursive;
+    color:purple;
+
+}
+.fa-sun{
+    color:#fafd0f;
+}
+.fa-moon{
+    color:#bcbfb9;
+}
+.fa-cloud-moon-rain{
+    color:rgb(39, 39, 243);
+}
+.fa-cloud-sun-rain{
+    color:rgb(39, 39, 243);
+}
+.fa-cloud-sun{
+    color:rgb(39, 39, 243);
+
+}
+#message-box{
+    position:absolute;
+    top:10vh;
+    right:50px;
+}
+
+#hourlyWind{
+    height:100px;
+    width:30%;
+    margin:auto;
+}
+
+@media only screen and (max-width: 600px) {
+    #inner-container{
+        flex-direction:column;
+
+    }
+    #box1{
+        padding:20px;
+    }
+    header{
+        flex-direction:column;
+    }
+    #title{
+        margin-top:20px;
+    }
+    .search-form{
+        margin-top:5px;
+    }
+    #box4{
+       margin-top:50px;
+    }
+}
