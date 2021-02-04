@@ -33,7 +33,7 @@ class Weather extends React.Component{
                 hourlyTime: ['1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'],
                 hourlyWindSpeed:[3,2,5,1,3,2,3,5],
                 hourlyTemp:[-1,-2,0,1,4,0,-1,3,2],
-            
+                
         }
         this.setKey = this.setKey.bind(this);
         this.setCity = this.setCity.bind(this);
